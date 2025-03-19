@@ -1,9 +1,41 @@
-import React from 'react'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import ShaperReview from "./components/ShaperReview";
+import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <Router>
+      <main className="min-h-screen bg-[#EBF8F8]">
+        <Navbar />
+        <div id="hero">
+          <Hero />
+        </div>
+        <div id="about">
+          <About />
+        </div>
+        <div id="shaper-review">
+          <ShaperReview />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
+        <div id="experience">
+          <Experience />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
+        <Footer />
+      </main>
+    </Router>
+  );
+};
 
-export default App
+export default App;
