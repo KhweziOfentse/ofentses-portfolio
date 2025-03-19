@@ -5,14 +5,14 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import ShaperReview from "./components/ShaperReview";
 import Projects from "./components/Projects";
-import Experience from "./components/Experience";
+
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <Router>
-      <main className="min-h-screen bg-[#EBF8F8]">
+      <main className="min-h-screen">
         <Navbar />
         <div id="hero">
           <Hero />
@@ -26,9 +26,7 @@ const App = () => {
         <div id="projects">
           <Projects />
         </div>
-        <div id="experience">
-          <Experience />
-        </div>
+       
         <div id="contact">
           <Contact />
         </div>

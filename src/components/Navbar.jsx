@@ -6,7 +6,6 @@ export default function Navbar() {
     { href: "#about", label: "About" },
     { href: "#shaper-review", label: "Shaper Review" },
     { href: "#projects", label: "Projects" },
-    { href: "#experience", label: "Experience" },
     { href: "#contact", label: "Contact" },
   ];
 
