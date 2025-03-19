@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+"use client"
+
+import { useState } from "react"
+import { motion } from "framer-motion"
 
 export default function About() {
   const skills = {
     frontend: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS", "Redux"],
     backend: ["Node.js", "Express", "MongoDB", "PostgreSQL", "REST API", "GraphQL", "Firebase"],
     tools: ["Git", "GitHub", "VS Code", "Figma", "Jest", "Docker", "AWS", "Vercel"],
-  };
+  }
 
-  const [activeTab, setActiveTab] = useState('frontend'); // State to track which skill category is active
+  const [activeTab, setActiveTab] = useState("frontend")
 
   const container = {
     hidden: { opacity: 0 },
@@ -18,15 +20,15 @@ export default function About() {
         staggerChildren: 0.1,
       },
     },
-  };
+  }
 
   const item = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0 },
-  };
+  }
 
   return (
-    <section id="about" className=" page py-20 px-4 md:px-6 bg-[#E6D8C9] text-[#333333]">
+    <section id="about" className="page py-20 px-4 md:px-6 bg-[#E6D8C9] text-[#333333]">
       <div className="container mx-auto max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -155,5 +157,6 @@ export default function About() {
         </div>
       </div>
     </section>
-  );
+  )
 }
+
