@@ -70,3 +70,19 @@ body {
     max-width: 1536px;
   }
 }
+
+.page{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+    align-items: center;
+   
+    scroll-snap-align: start;
+}
+
+.nav{
+  z-index: 999;
+ background-color: var(--primary);
+ margin: 10px;
+ margin-top: 300px;
+}
