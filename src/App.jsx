@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <Router>
-      <main className="min-h-screen">
+      <main className="min-h-screen bg-[#EBF8F8]">
         <Navbar />
         <div id="hero">
           <Hero />
