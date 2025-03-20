@@ -74,7 +74,7 @@ export default function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
                 whileHover={{ x: 5 }}
               >
-                <i className={`bi ${link.icon} text-lg`} />
+                <i className={`bi ${link.icon} `} />
                 <span>{link.label}</span>
               </motion.a>
             ))}
