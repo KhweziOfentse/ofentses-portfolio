@@ -47,30 +47,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-4 text-center text-sm text-[#333333]/60">
-          <p className="flex items-center justify-center">
-            Built with{" "}
-            <motion.span
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}
-              className="mx-1"
-            >
-              <Heart className="h-4 w-4 text-[#E6BEAD]" />
-            </motion.span>{" "}
-            using React
-          </p>
-          <div className="mt-2 space-x-4">
-            <Link to="/policy" className="hover:text-[#B1967D] transition-colors">
-              Privacy Policy
-            </Link>
-            <Link to="/forgot-password" className="hover:text-[#B1967D] transition-colors">
-              Forgot Password
-            </Link>
-            <Link to="/report-post" className="hover:text-[#B1967D] transition-colors">
-              Report Post
-            </Link>
-          </div>
-        </div>
+        
       </div>
     </footer>
   )
